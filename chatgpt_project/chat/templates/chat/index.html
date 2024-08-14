@@ -2,20 +2,17 @@
 {% block title %}ChatGPT Integration{% endblock %}
 {% block header %}Advanced Chat Interface{% endblock %}
 {% block content %}
+<div class="container">
     <div class="row mb-4">
         <div class="col-md-8 mx-auto">
-            <div class="search-container mb-3">
-                <input type="text" class="form-control search-input" placeholder="Ask things you want to know...">
-            </div>
-            <!-- <div class="category-buttons mt-2">
-
+            <div class="category-buttons mb-3">
                 <button class="btn btn-outline-secondary">검색</button>
                 <button class="btn btn-warning">영상</button>
                 <button class="btn btn-outline-secondary">웹사이트</button>
                 <button class="btn btn-outline-secondary">PDF</button>
                 <button class="btn btn-outline-secondary">녹음</button>
                 <button class="btn btn-outline-secondary">텍스트</button>
-            </div> -->
+            </div>
             <p>This is an advanced chat interface using ChatGPT with file upload capability.</p>
             <form method="post" enctype="multipart/form-data" class="mb-4">
                 {% csrf_token %}
@@ -55,3 +52,4 @@
         </div>
     {% endif %}
 {% endblock %}
+</div>
